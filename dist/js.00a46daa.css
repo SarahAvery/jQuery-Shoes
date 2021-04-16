@@ -1,6 +1,253 @@
 body {
   height: 100%;
-  background-color: lightcoral;
+  background: rgba(122, 74, 122, 0.2);
+  background: #300930;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.visually-hidden {
+  background-color: #fff;
+  color: #000;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background-color: #7a4a7a;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 8px 5%;
+  color: #eee;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+}
+.header ul {
+  display: flex;
+  align-items: flex-end;
+}
+.header .logo {
+  height: 70px;
+  width: 70px;
+}
+.header img {
+  width: 100%;
+}
+.header li {
+  list-style: none;
+  padding: 5px;
+  margin: 0 12px;
+}
+.header .bag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 30px;
+}
+.header .bi-bag {
+  color: #eee;
+}
+.header .bi-bag-check-fill {
+  color: #8de044;
+}
+
+aside.hidden {
+  right: -9999px;
+  transition: right 2s;
+}
+
+aside {
+  z-index: 100;
+  background: white;
+  height: auto;
+  width: auto;
+  position: fixed;
+  right: 0;
+  top: 90px;
+  margin-top: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: right 0.5s;
+}
+aside .cart-content {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+aside .point {
+  clip-path: polygon(53% 55%, 0% 100%, 100% 100%);
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -50px;
+  left: 230px;
+}
+aside .info {
+  height: 80px;
+  width: 80px;
+}
+aside img {
+  height: 100%;
+}
+aside .title {
+  padding-left: 20px;
+  color: #300930;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.product-title {
+  padding: 15px 5%;
+  padding-top: 105px;
+  color: #eee;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #7a4a7a;
+}
+
+.shoe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 5%;
+}
+.shoe-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.shoe-container .item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+.shoe-container .item .image {
+  height: 200px;
+  width: 400px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.shoe-container .item img {
+  border-radius: 4px;
+  width: 100%;
+  object-fit: contain;
+}
+.shoe-container .item p.hidden {
+  display: none;
+}
+.shoe-container li {
+  flex-basis: 49%;
+  padding: 10px;
+  background: #300930;
+  color: #eee;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.589);
+}
+.shoe-container li .name {
+  align-items: center;
+  font-size: 22px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+.shoe-container li .name div {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.shoe-container li .name .arrow {
+  transition: 1s;
+  cursor: pointer;
+}
+.shoe-container li .description,
+.shoe-container li p {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  width: 90%;
+  display: inline;
+  height: auto;
+}
+.shoe-container li .sizes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.589);
+  text-transform: capitalize;
+}
+.shoe-container li .sizes p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.shoe-container li .sizes form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: auto;
+  list-style: none;
+}
+.shoe-container li .sizes label {
+  width: 70px;
+  padding: 8px 0;
+  background: #7a4a7a;
+  flex-basis: auto;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.shoe-container li .sizes label:hover, .shoe-container li .sizes label:active {
+  background-color: #8de044;
+}
+.shoe-container li .sizes label input {
+  display: none;
+}
+.shoe-container li .sizes .cart {
+  background: #7a4a7a;
+  flex-basis: auto;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 20px;
+  padding: 5px 24px;
+  border-radius: 5px;
+  border: none;
+  color: #eee;
+  outline: none;
+  cursor: pointer;
+  width: 60%;
+}
+.shoe-container li .sizes .cart:active {
+  background-color: #8de044;
+}
+.shoe-container li .sizes .cart:disabled {
+  opacity: 0.4;
+  cursor: unset;
+}
+.shoe-container li .sizes .button-active {
+  background-color: #8de044;
+}
+
+footer {
+  background-color: #7a4a7a;
+  height: 40px;
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
