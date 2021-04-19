@@ -39,6 +39,7 @@ body {
   width: auto;
 }
 .header .logo p {
+  font-weight: bolder;
   font-size: 40px;
   text-align: center;
   color: #9a23f5;
@@ -232,7 +233,7 @@ aside .title {
   display: none;
 }
 .shoe-container li .sizes .cart {
-  background: #7a4a7a;
+  background: #9a23f5;
   flex-basis: auto;
   text-align: center;
   margin: 15px 0;
@@ -249,7 +250,7 @@ aside .title {
   background-color: #9a23f5;
 }
 .shoe-container li .sizes .cart:disabled {
-  opacity: 0.4;
+  opacity: 0.3;
   cursor: unset;
 }
 .shoe-container li .sizes .button-active {

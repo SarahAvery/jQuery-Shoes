@@ -44,6 +44,7 @@ body {
     width: auto;
 
     p {
+      font-weight: bolder;
       font-size: 40px;
       text-align: center;
       color: rgba(154, 35, 245, 1);
@@ -268,7 +269,7 @@ aside {
       }
 
       .cart {
-        background: rgb(122, 74, 122);
+        background: rgba(154, 35, 245, 1);
         flex-basis: auto;
         text-align: center;
         margin: 15px 0;
@@ -286,7 +287,7 @@ aside {
         }
 
         &:disabled {
-          opacity: 0.4;
+          opacity: 0.3;
           cursor: unset;
         }
       }
