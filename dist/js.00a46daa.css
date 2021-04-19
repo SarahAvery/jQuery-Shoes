@@ -51,6 +51,10 @@ body {
   list-style: none;
   padding: 5px;
   margin: 0 12px;
+  cursor: pointer;
+}
+.header li:hover {
+  color: #9a23f5;
 }
 .header .bag {
   display: flex;
@@ -62,8 +66,14 @@ body {
 .header .bi-bag {
   color: #eee;
 }
+.header .bi-bag:hover {
+  color: #9a23f5;
+}
 .header .bi-bag-check-fill {
   color: #9a23f5;
+}
+.header .bi-bag-check-fill:hover {
+  color: #23d9f5;
 }
 
 aside.hidden {
@@ -259,7 +269,54 @@ aside .title {
 
 footer {
   background-color: #f59323;
-  height: 40px;
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+footer .container {
+  height: auto;
+  text-align: center;
+  padding: 20px 0;
+}
+footer .container nav {
+  max-width: 400px;
+  margin: 0 auto;
+}
+footer .container nav li {
+  margin: 8px;
+  cursor: pointer;
+}
+footer .container nav li:hover {
+  color: #9a23f5;
+}
+footer .container nav a {
+  text-decoration: none;
+  list-style: none;
+}
+footer .container nav.icons {
+  margin-top: 10px;
+}
+footer .container nav.icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container nav.icons ul li {
+  height: 30px;
+  width: 30px;
+}
+footer .container nav.icons ul svg {
+  fill: #9a23f5;
+}
+footer .container nav.icons ul svg:hover {
+  fill: #23d9f5;
+}
+footer .copy {
+  font-size: 14px;
+  text-align: left;
+  padding-bottom: 5px;
 }
 
 @media only screen and (max-width: 1250px) {

@@ -59,6 +59,11 @@ body {
     list-style: none;
     padding: 5px;
     margin: 0 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(154, 35, 245, 1);
+    }
   }
 
   .bag {
@@ -71,10 +76,18 @@ body {
 
   .bi-bag {
     color: #eee;
+
+    &:hover {
+      color: rgba(154, 35, 245, 1);
+    }
   }
 
   .bi-bag-check-fill {
     color: rgba(154, 35, 245, 1);
+
+    &:hover {
+      color: rgba(35, 217, 245, 1);
+    }
   }
 }
 
@@ -301,8 +314,65 @@ aside {
 
 footer {
   background-color: rgba(245, 147, 35, 1);
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 
-  height: 40px;
+  .container {
+    height: auto;
+    text-align: center;
+    padding: 20px 0;
+
+    nav {
+      max-width: 400px;
+      margin: 0 auto;
+
+      li {
+        margin: 8px;
+        cursor: pointer;
+
+        &:hover {
+          color: rgba(154, 35, 245, 1);
+        }
+      }
+
+      a {
+        text-decoration: none;
+        list-style: none;
+      }
+    }
+
+    nav.icons {
+      margin-top: 10px;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+          height: 30px;
+          width: 30px;
+        }
+
+        svg {
+          fill: rgba(154, 35, 245, 1);
+
+          &:hover {
+            fill: rgba(35, 217, 245, 1);
+          }
+        }
+      }
+    }
+  }
+
+  .copy {
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 5px;
+  }
 }
 
 @media only screen and (max-width: 1250px) {

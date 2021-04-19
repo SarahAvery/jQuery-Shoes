@@ -38,15 +38,6 @@ import "../resources/sass/main";
       }
     });
 
-    // if (!$(".added").hasClass("hidden")) {
-    //   $(".added").delay(100).addClass("hidden");
-    // }
-
-    //     var $elm = $("#username").addClass("error");
-    // setTimeout(function() {
-    //   $elm.removeClass("error");
-    // }, 2000);
-
     $(".name").on("click", function (event) {
       const up = "bi-chevron-compact-up";
       const down = "bi-chevron-compact-down";
@@ -61,7 +52,5 @@ import "../resources/sass/main";
         $(arrow).removeClass(up).addClass(down);
       }
     });
-
-    // $( "#foo" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
   });
 })(jQuery);

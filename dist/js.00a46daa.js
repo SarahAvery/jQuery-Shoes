@@ -226,14 +226,7 @@ require("../resources/sass/main");
           $(".added").addClass("hidden").dequeue();
         });
       }
-    }); // if (!$(".added").hasClass("hidden")) {
-    //   $(".added").delay(100).addClass("hidden");
-    // }
-    //     var $elm = $("#username").addClass("error");
-    // setTimeout(function() {
-    //   $elm.removeClass("error");
-    // }, 2000);
-
+    });
     $(".name").on("click", function (event) {
       var up = "bi-chevron-compact-up";
       var down = "bi-chevron-compact-down";
@@ -247,7 +240,7 @@ require("../resources/sass/main");
         $(desc).addClass("hidden");
         $(arrow).removeClass(up).addClass(down);
       }
-    }); // $( "#foo" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+    });
   });
 })(jQuery);
 },{"../resources/sass/main":"resources/sass/main.scss"}],"../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
