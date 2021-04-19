@@ -208,6 +208,10 @@ aside .title {
   flex-basis: auto;
   list-style: none;
 }
+.shoe-container li .sizes .cart-btn {
+  width: 100%;
+  text-align: center;
+}
 .shoe-container li .sizes label {
   width: 70px;
   padding: 8px 0;
@@ -255,6 +259,45 @@ aside .title {
 footer {
   background-color: #f59323;
   height: 40px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .shoe-container {
+    margin: 5px 2%;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .shoe-container li {
+    flex-basis: 80%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 8px 2%;
+  }
+}
+@media only screen and (max-width: 532px) {
+  .product-title {
+    padding-top: 155px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .shoe-container .item .image {
+    height: 150px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 467px) {
+  .product-title {
+    padding-top: 185px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .shoe-container .item .image {
+    height: 150px;
+    width: 250px;
+  }
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
