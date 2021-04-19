@@ -1,8 +1,7 @@
 body {
   height: 100%;
-  background: rgba(122, 74, 122, 0.2);
-  background: #300930;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
 }
 
 .visually-hidden {
@@ -20,12 +19,13 @@ body {
   z-index: 10;
   position: fixed;
   width: 100%;
-  background-color: #7a4a7a;
+  background-color: #f59323;
   height: auto;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   font-size: 18px;
+  font-weight: bold;
   padding: 8px 5%;
   color: #eee;
   border-bottom: 1px solid rgba(255, 255, 255, 0.589);
@@ -35,8 +35,13 @@ body {
   align-items: flex-end;
 }
 .header .logo {
-  height: 70px;
-  width: 70px;
+  height: auto;
+  width: auto;
+}
+.header .logo p {
+  font-size: 40px;
+  text-align: center;
+  color: #9a23f5;
 }
 .header img {
   width: 100%;
@@ -57,7 +62,7 @@ body {
   color: #eee;
 }
 .header .bi-bag-check-fill {
-  color: #8de044;
+  color: #9a23f5;
 }
 
 aside.hidden {
@@ -112,7 +117,7 @@ aside .title {
   color: #eee;
   font-weight: bold;
   font-size: 22px;
-  background-color: #7a4a7a;
+  background-color: #f59323;
 }
 
 .shoe-container {
@@ -153,10 +158,10 @@ aside .title {
 .shoe-container li {
   flex-basis: 49%;
   padding: 10px;
-  background: #300930;
-  color: #eee;
+  background: #fff;
+  color: #9a23f5;
   height: auto;
-  border: 1px solid rgba(255, 255, 255, 0.589);
+  border: 1px solid #f59323;
 }
 .shoe-container li .name {
   align-items: center;
@@ -188,7 +193,7 @@ aside .title {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-top: 1px solid rgba(255, 255, 255, 0.589);
+  border-top: 1px solid #9a23f5;
   text-transform: capitalize;
 }
 .shoe-container li .sizes p {
@@ -206,7 +211,9 @@ aside .title {
 .shoe-container li .sizes label {
   width: 70px;
   padding: 8px 0;
-  background: #7a4a7a;
+  background: #23d9f5;
+  color: #fff;
+  font-weight: bold;
   flex-basis: auto;
   margin: 5px;
   text-align: center;
@@ -215,7 +222,7 @@ aside .title {
   cursor: pointer;
 }
 .shoe-container li .sizes label:hover, .shoe-container li .sizes label:active {
-  background-color: #8de044;
+  background-color: #9a23f5;
 }
 .shoe-container li .sizes label input {
   display: none;
@@ -235,18 +242,18 @@ aside .title {
   width: 60%;
 }
 .shoe-container li .sizes .cart:active {
-  background-color: #8de044;
+  background-color: #9a23f5;
 }
 .shoe-container li .sizes .cart:disabled {
   opacity: 0.4;
   cursor: unset;
 }
 .shoe-container li .sizes .button-active {
-  background-color: #8de044;
+  background-color: #9a23f5;
 }
 
 footer {
-  background-color: #7a4a7a;
+  background-color: #f59323;
   height: 40px;
 }
 
